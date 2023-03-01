@@ -1,0 +1,29 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "clk_slow" LOC = L13 | IOSTANDARD = LVTTL | PULLUP;
+NET "clk_slow" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "reset" LOC = L14 | IOSTANDARD = LVTTL | PULLUP;
+NET "wr" LOC = H18 | IOSTANDARD = LVTTL | PULLUP;
+NET "rd" LOC = N17 | IOSTANDARD = LVTTL | PULLUP;
+NET "clk_internal" LOC = C9  | IOSTANDARD = LVCMOS33;
+NET "r_Rx_Serial" LOC = U8 | IOSTANDARD = LVTTL ; 
+NET "w_Tx_Serial" LOC = M13 | IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = SLOW ;
+NET "empty" LOC = F12 | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8 ;
+NET "full" LOC = E12 | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8 ;
+NET "manjak" LOC = F11 | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8 ;
+NET "error_write" LOC =  E11 | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8 ;
+NET "error_read" LOC = C11 | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8 ;
+
+
+
+#NET "numData[0]" LOC =  E11 | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8 ;
+#NET "numData[1]" LOC = F11 | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8 ;
+#NET "numData[2]" LOC = C11 | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8 ;
+
+
+
+NET "fifo_counter[0]" LOC = D11 | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8 ;
+NET "fifo_counter[1]" LOC = E9 | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8 ;
+NET "fifo_counter[2]" LOC = F9 | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8 ;
+
